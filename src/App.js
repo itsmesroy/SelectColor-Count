@@ -21,7 +21,10 @@ function App() {
           backgroundColor: color,
         }}
       >
-        <div>
+        <div style={{display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap:"10px",}}>
           <button onClick={handleadd}>+</button>
           <div style={{ color: "white" }}>Count: {counter}</div>
           <button onClick={handlesub}>-</button>
