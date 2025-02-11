@@ -1,6 +1,7 @@
 import {useState} from "react"
 import './App.css';
 import React from 'react'
+import Form from './components/Form';
 function App() {  
     const [counter, setCounter] = useState("0");
     const [color, setColor] = useState("black");
@@ -29,6 +30,7 @@ function App() {
           <div style={{ color: "white" }}>Count: {counter}</div>
           <button onClick={handlesub}>-</button>
         </div>
+        <Form/>
         <div>
           <div
             style={{
